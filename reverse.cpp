@@ -1,16 +1,16 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
+    int num;
     cout<<"Enter number elements: "<<endl;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++)
+    cin>>num;
+    int arr[num];
+    for(int i=0;i<num;i++)
     {
         cin>>arr[i];
 
     }
-    for(int i=n-1;i>=0;i--)
+    for(int i=num-1;i>=0;i--)
     {
         cout<<arr[i]<<" ";
 
