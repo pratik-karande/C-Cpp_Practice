@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="test1.c"/>
+    <tok fileIndex="0" linenr="2" column="1" str="#"/>
+    <tok fileIndex="0" linenr="2" column="2" str="include"/>
+    <tok fileIndex="0" linenr="2" column="10" str="&lt;stdio.h&gt;"/>
+    <tok fileIndex="0" linenr="4" column="1" str="int"/>
+    <tok fileIndex="0" linenr="4" column="5" str="main"/>
+    <tok fileIndex="0" linenr="4" column="9" str="("/>
+    <tok fileIndex="0" linenr="4" column="10" str=")"/>
+    <tok fileIndex="0" linenr="5" column="1" str="{"/>
+    <tok fileIndex="0" linenr="6" column="5" str="int"/>
+    <tok fileIndex="0" linenr="6" column="9" str="num"/>
+    <tok fileIndex="0" linenr="6" column="12" str=";"/>
+    <tok fileIndex="0" linenr="8" column="5" str="/* Input number from user */"/>
+    <tok fileIndex="0" linenr="9" column="5" str="printf"/>
+    <tok fileIndex="0" linenr="9" column="11" str="("/>
+    <tok fileIndex="0" linenr="9" column="12" str="&quot;Enter any number to check even or odd: &quot;"/>
+    <tok fileIndex="0" linenr="9" column="53" str=")"/>
+    <tok fileIndex="0" linenr="9" column="54" str=";"/>
+    <tok fileIndex="0" linenr="10" column="5" str="scanf"/>
+    <tok fileIndex="0" linenr="10" column="10" str="("/>
+    <tok fileIndex="0" linenr="10" column="11" str="&quot;%d&quot;"/>
+    <tok fileIndex="0" linenr="10" column="15" str=","/>
+    <tok fileIndex="0" linenr="10" column="17" str="&amp;"/>
+    <tok fileIndex="0" linenr="10" column="18" str="num"/>
+    <tok fileIndex="0" linenr="10" column="21" str=")"/>
+    <tok fileIndex="0" linenr="10" column="22" str=";"/>
+    <tok fileIndex="0" linenr="12" column="5" str="/* Check if the number is divisible by 2 then it is even */"/>
+    <tok fileIndex="0" linenr="13" column="5" str="if"/>
+    <tok fileIndex="0" linenr="13" column="7" str="("/>
+    <tok fileIndex="0" linenr="13" column="8" str="num"/>
+    <tok fileIndex="0" linenr="13" column="12" str="%"/>
+    <tok fileIndex="0" linenr="13" column="14" str="2"/>
+    <tok fileIndex="0" linenr="13" column="16" str="=="/>
+    <tok fileIndex="0" linenr="13" column="19" str="0"/>
+    <tok fileIndex="0" linenr="13" column="20" str=")"/>
+    <tok fileIndex="0" linenr="15" column="9" str="/* num % 2 is 0 */"/>
+    <tok fileIndex="0" linenr="16" column="9" str="printf"/>
+    <tok fileIndex="0" linenr="16" column="15" str="("/>
+    <tok fileIndex="0" linenr="16" column="16" str="&quot;Number is Even.&quot;"/>
+    <tok fileIndex="0" linenr="16" column="33" str=")"/>
+    <tok fileIndex="0" linenr="16" column="34" str=";"/>
+    <tok fileIndex="0" linenr="18" column="5" str="else"/>
+    <tok fileIndex="0" linenr="20" column="9" str="/* num % 2 is 1 */"/>
+    <tok fileIndex="0" linenr="21" column="9" str="printf"/>
+    <tok fileIndex="0" linenr="21" column="15" str="("/>
+    <tok fileIndex="0" linenr="21" column="16" str="&quot;Number is Odd.&quot;"/>
+    <tok fileIndex="0" linenr="21" column="32" str=")"/>
+    <tok fileIndex="0" linenr="21" column="33" str=";"/>
+    <tok fileIndex="0" linenr="24" column="5" str="return"/>
+    <tok fileIndex="0" linenr="24" column="12" str="0"/>
+    <tok fileIndex="0" linenr="24" column="13" str=";"/>
+    <tok fileIndex="0" linenr="25" column="1" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <standards>
+    <c version="c11"/>
+    <cpp version="c++20"/>
+  </standards>
+  <directivelist>
+    <directive file="test1.c" linenr="2" str="#include &lt;stdio.h&gt;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="0000026947C8F1A0" file="test1.c" linenr="4" column="1" str="int" scope="000002694758EC60" type="name"/>
+    <token id="0000026947C8E180" file="test1.c" linenr="4" column="5" str="main" scope="000002694758EC60" type="name" function="00000269475A3700"/>
+    <token id="0000026947C8F4A0" file="test1.c" linenr="4" column="9" str="(" scope="000002694758EC60" link="0000026947C8F320" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0000026947C8F320" file="test1.c" linenr="4" column="10" str=")" scope="000002694758EC60" link="0000026947C8F4A0"/>
+    <token id="0000026947C8EC60" file="test1.c" linenr="5" column="1" str="{" scope="000002694754E8B0" link="0000026947C8F620"/>
+    <token id="0000026947C8EBA0" file="test1.c" linenr="6" column="5" str="int" scope="000002694754E8B0" type="name"/>
+    <token id="0000026947C8F800" file="test1.c" linenr="6" column="9" str="num" scope="000002694754E8B0" type="name" varId="1" variable="0000026947C9A0E0" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0000026947C8EA20" file="test1.c" linenr="6" column="12" str=";" scope="000002694754E8B0"/>
+    <token id="0000026947C8F380" file="test1.c" linenr="9" column="5" str="printf" scope="000002694754E8B0" type="name" astParent="0000026947C8ED20"/>
+    <token id="0000026947C8ED20" file="test1.c" linenr="9" column="11" str="(" scope="000002694754E8B0" link="0000026947C8F200" astOperand1="0000026947C8F380" astOperand2="0000026947C8F3E0" valueType-type="int" valueType-sign="signed" valueType-reference="None" valueType-originalTypeName="int"/>
+    <token id="0000026947C8F3E0" file="test1.c" linenr="9" column="12" str="&quot;Enter any number to check even or odd: &quot;" scope="000002694754E8B0" type="string" strlen="39" values="0000026947CA64E0" astParent="0000026947C8ED20" valueType-type="char" valueType-pointer="1" valueType-constness="1" valueType-reference="None"/>
+    <token id="0000026947C8F200" file="test1.c" linenr="9" column="53" str=")" scope="000002694754E8B0" link="0000026947C8ED20"/>
+    <token id="0000026947C8E0C0" file="test1.c" linenr="9" column="54" str=";" scope="000002694754E8B0"/>
+    <token id="0000026947C8F440" file="test1.c" linenr="10" column="5" str="scanf" scope="000002694754E8B0" type="name" astParent="0000026947C8F500"/>
+    <token id="0000026947C8F500" file="test1.c" linenr="10" column="10" str="(" scope="000002694754E8B0" link="0000026947C8F140" astOperand1="0000026947C8F440" astOperand2="0000026947C8F0E0" valueType-type="int" valueType-sign="signed" valueType-reference="None" valueType-originalTypeName="int"/>
+    <token id="0000026947C8F080" file="test1.c" linenr="10" column="11" str="&quot;%d&quot;" scope="000002694754E8B0" type="string" strlen="2" values="0000026947CA6440" astParent="0000026947C8F0E0" valueType-type="char" valueType-pointer="1" valueType-constness="1" valueType-reference="None"/>
+    <token id="0000026947C8F0E0" file="test1.c" linenr="10" column="15" str="," scope="000002694754E8B0" astParent="0000026947C8F500" astOperand1="0000026947C8F080" astOperand2="0000026947C8E8A0"/>
+    <token id="0000026947C8E8A0" file="test1.c" linenr="10" column="17" str="&amp;" scope="000002694754E8B0" type="op" values="0000026947CA6500" astParent="0000026947C8F0E0" astOperand1="0000026947C8E720" valueType-type="int" valueType-sign="signed" valueType-pointer="1" valueType-reference="None"/>
+    <token id="0000026947C8E720" file="test1.c" linenr="10" column="18" str="num" scope="000002694754E8B0" type="name" varId="1" variable="0000026947C9A0E0" values="0000026947CA60C0" astParent="0000026947C8E8A0" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0000026947C8F140" file="test1.c" linenr="10" column="21" str=")" scope="000002694754E8B0" link="0000026947C8F500"/>
+    <token id="0000026947C8E120" file="test1.c" linenr="10" column="22" str=";" scope="000002694754E8B0"/>
+    <token id="0000026947C8E480" file="test1.c" linenr="13" column="5" str="if" scope="000002694754E8B0" type="name" astParent="0000026947C8E7E0"/>
+    <token id="0000026947C8E7E0" file="test1.c" linenr="13" column="7" str="(" scope="000002694754E8B0" link="0000026947C8E3C0" astOperand1="0000026947C8E480" astOperand2="0000026947C8EA80"/>
+    <token id="0000026947C8E780" file="test1.c" linenr="13" column="8" str="num" scope="000002694754E8B0" type="name" varId="1" variable="0000026947C9A0E0" astParent="0000026947C8E1E0" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0000026947C8E1E0" file="test1.c" linenr="13" column="12" str="%" scope="000002694754E8B0" type="op" isArithmeticalOp="true" values="0000026947CA6840" astParent="0000026947C8EA80" astOperand1="0000026947C8E780" astOperand2="0000026947C8ECC0" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0000026947C8ECC0" file="test1.c" linenr="13" column="14" str="2" scope="000002694754E8B0" type="number" isInt="true" values="0000026947CA6280" astParent="0000026947C8E1E0" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0000026947C8EA80" file="test1.c" linenr="13" column="16" str="==" scope="000002694754E8B0" type="op" isComparisonOp="true" astParent="0000026947C8E7E0" astOperand1="0000026947C8E1E0" astOperand2="0000026947C8E5A0" valueType-type="bool" valueType-reference="None"/>
+    <token id="0000026947C8E5A0" file="test1.c" linenr="13" column="19" str="0" scope="000002694754E8B0" type="number" isInt="true" values="0000026947CA64C0" astParent="0000026947C8EA80" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0000026947C8E3C0" file="test1.c" linenr="13" column="20" str=")" scope="000002694754E8B0" link="0000026947C8E7E0"/>
+    <token id="0000026947C8E9C0" file="test1.c" linenr="13" column="0" str="{" scope="000002694754E9E0" link="0000026947C8E960"/>
+    <token id="0000026947C8E840" file="test1.c" linenr="16" column="9" str="printf" scope="000002694754E9E0" type="name" astParent="0000026947C8E240"/>
+    <token id="0000026947C8E240" file="test1.c" linenr="16" column="15" str="(" scope="000002694754E9E0" link="0000026947C8F5C0" astOperand1="0000026947C8E840" astOperand2="0000026947C8F6E0" valueType-type="int" valueType-sign="signed" valueType-reference="None" valueType-originalTypeName="int"/>
+    <token id="0000026947C8F6E0" file="test1.c" linenr="16" column="16" str="&quot;Number is Even.&quot;" scope="000002694754E9E0" type="string" strlen="15" values="0000026947CA6360" astParent="0000026947C8E240" valueType-type="char" valueType-pointer="1" valueType-constness="1" valueType-reference="None"/>
+    <token id="0000026947C8F5C0" file="test1.c" linenr="16" column="33" str=")" scope="000002694754E9E0" link="0000026947C8E240"/>
+    <token id="0000026947C8E900" file="test1.c" linenr="16" column="34" str=";" scope="000002694754E9E0"/>
+    <token id="0000026947C8E960" file="test1.c" linenr="16" column="0" str="}" scope="000002694754E9E0" link="0000026947C8E9C0"/>
+    <token id="0000026947C8F260" file="test1.c" linenr="18" column="5" str="else" scope="000002694754E8B0" type="name"/>
+    <token id="0000026947C8EB40" file="test1.c" linenr="18" column="0" str="{" scope="000002694799C070" link="0000026947C8F680"/>
+    <token id="0000026947C8EE40" file="test1.c" linenr="21" column="9" str="printf" scope="000002694799C070" type="name" astParent="0000026947C8E300"/>
+    <token id="0000026947C8E300" file="test1.c" linenr="21" column="15" str="(" scope="000002694799C070" link="0000026947C8F560" astOperand1="0000026947C8EE40" astOperand2="0000026947C8F2C0" valueType-type="int" valueType-sign="signed" valueType-reference="None" valueType-originalTypeName="int"/>
+    <token id="0000026947C8F2C0" file="test1.c" linenr="21" column="16" str="&quot;Number is Odd.&quot;" scope="000002694799C070" type="string" strlen="14" values="0000026947CA6740" astParent="0000026947C8E300" valueType-type="char" valueType-pointer="1" valueType-constness="1" valueType-reference="None"/>
+    <token id="0000026947C8F560" file="test1.c" linenr="21" column="32" str=")" scope="000002694799C070" link="0000026947C8E300"/>
+    <token id="0000026947C8E4E0" file="test1.c" linenr="21" column="33" str=";" scope="000002694799C070"/>
+    <token id="0000026947C8F680" file="test1.c" linenr="21" column="0" str="}" scope="000002694799C070" link="0000026947C8EB40"/>
+    <token id="0000026947C8E420" file="test1.c" linenr="24" column="5" str="return" scope="000002694754E8B0" type="name" astOperand1="0000026947C8EEA0" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0000026947C8EEA0" file="test1.c" linenr="24" column="12" str="0" scope="000002694754E8B0" type="number" isInt="true" values="0000026947CA65A0" astParent="0000026947C8E420" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="0000026947C8ED80" file="test1.c" linenr="24" column="13" str=";" scope="000002694754E8B0"/>
+    <token id="0000026947C8F620" file="test1.c" linenr="25" column="1" str="}" scope="000002694754E8B0" link="0000026947C8EC60"/>
+  </tokenlist>
+  <scopes>
+    <scope id="000002694758EC60" type="Global">
+      <functionList>
+        <function id="00000269475A3700" token="0000026947C8E180" tokenDef="0000026947C8E180" name="main" type="Function"/>
+      </functionList>
+    </scope>
+    <scope id="000002694754E8B0" type="Function" className="main" bodyStart="0000026947C8EC60" bodyEnd="0000026947C8F620" nestedIn="000002694758EC60" function="00000269475A3700">
+      <varlist>
+        <var id="0000026947C9A0E0"/>
+      </varlist>
+    </scope>
+    <scope id="000002694754E9E0" type="If" bodyStart="0000026947C8E9C0" bodyEnd="0000026947C8E960" nestedIn="000002694754E8B0"/>
+    <scope id="000002694799C070" type="Else" bodyStart="0000026947C8EB40" bodyEnd="0000026947C8F680" nestedIn="000002694754E8B0"/>
+  </scopes>
+  <variables>
+    <var id="0000026947C9A0E0" nameToken="0000026947C8F800" typeStartToken="0000026947C8EBA0" typeEndToken="0000026947C8EBA0" access="Local" scope="000002694754E8B0" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="0000026947CA64E0">
+      <value tokvalue="0000026947C8F3E0" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="0000026947CA6440">
+      <value tokvalue="0000026947C8F080" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="0000026947CA6500">
+      <value lifetime="0000026947C8E720" lifetime-scope="Local" lifetime-kind="Address" bound="Point" possible="true" path="0"/>
+      <value uninit="1" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="0000026947CA60C0">
+      <value uninit="1" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="0000026947CA6840">
+      <value intvalue="2" bound="Lower" impossible="true" path="0"/>
+    </values>
+    <values id="0000026947CA6280">
+      <value intvalue="2" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="0000026947CA64C0">
+      <value intvalue="0" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="0000026947CA6360">
+      <value tokvalue="0000026947C8F6E0" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="0000026947CA6740">
+      <value tokvalue="0000026947C8F2C0" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="0000026947CA65A0">
+      <value intvalue="0" bound="Point" known="true" path="0"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>
