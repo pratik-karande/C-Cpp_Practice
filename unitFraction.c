@@ -1,3 +1,6 @@
+// There is more than one way to split 1 into four unit-fractions. [1 = 1/a + 1/b + 1/c + 1/d, for 
+// positive integers a<=b, b<=c, c<=d] 
+// Please write a function that enumerates all such sets (a, b, c, d) and print them. 
 #include<stdio.h>
 int gcd(int a,int b){
     if(a==0){
