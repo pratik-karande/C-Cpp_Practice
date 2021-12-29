@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win64" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="structoint.c"/>
+    <tok fileIndex="0" linenr="1" column="1" str="#"/>
+    <tok fileIndex="0" linenr="1" column="2" str="include"/>
+    <tok fileIndex="0" linenr="1" column="9" str="&lt;stdio.h&gt;"/>
+    <tok fileIndex="0" linenr="2" column="1" str="struct"/>
+    <tok fileIndex="0" linenr="2" column="8" str="A"/>
+    <tok fileIndex="0" linenr="3" column="1" str="{"/>
+    <tok fileIndex="0" linenr="4" column="5" str="unsigned"/>
+    <tok fileIndex="0" linenr="4" column="14" str="int"/>
+    <tok fileIndex="0" linenr="4" column="18" str="n"/>
+    <tok fileIndex="0" linenr="4" column="19" str=";"/>
+    <tok fileIndex="0" linenr="5" column="5" str="char"/>
+    <tok fileIndex="0" linenr="5" column="10" str="junk"/>
+    <tok fileIndex="0" linenr="5" column="14" str="["/>
+    <tok fileIndex="0" linenr="5" column="15" str="5"/>
+    <tok fileIndex="0" linenr="5" column="16" str="]"/>
+    <tok fileIndex="0" linenr="5" column="17" str=";"/>
+    <tok fileIndex="0" linenr="6" column="1" str="}"/>
+    <tok fileIndex="0" linenr="6" column="2" str=";"/>
+    <tok fileIndex="0" linenr="9" column="1" str="int"/>
+    <tok fileIndex="0" linenr="9" column="5" str="main"/>
+    <tok fileIndex="0" linenr="9" column="9" str="("/>
+    <tok fileIndex="0" linenr="9" column="10" str=")"/>
+    <tok fileIndex="0" linenr="10" column="1" str="{"/>
+    <tok fileIndex="0" linenr="11" column="5" str="struct"/>
+    <tok fileIndex="0" linenr="11" column="12" str="A"/>
+    <tok fileIndex="0" linenr="11" column="14" str="a"/>
+    <tok fileIndex="0" linenr="11" column="15" str=";"/>
+    <tok fileIndex="0" linenr="12" column="1" str="unsigned"/>
+    <tok fileIndex="0" linenr="12" column="10" str="int"/>
+    <tok fileIndex="0" linenr="12" column="14" str="*"/>
+    <tok fileIndex="0" linenr="12" column="15" str="p"/>
+    <tok fileIndex="0" linenr="12" column="17" str="="/>
+    <tok fileIndex="0" linenr="12" column="19" str="("/>
+    <tok fileIndex="0" linenr="12" column="20" str="unsigned"/>
+    <tok fileIndex="0" linenr="12" column="29" str="int"/>
+    <tok fileIndex="0" linenr="12" column="33" str="*"/>
+    <tok fileIndex="0" linenr="12" column="34" str=")"/>
+    <tok fileIndex="0" linenr="12" column="35" str="&amp;"/>
+    <tok fileIndex="0" linenr="12" column="36" str="a"/>
+    <tok fileIndex="0" linenr="12" column="37" str=";"/>
+    <tok fileIndex="0" linenr="13" column="5" str="return"/>
+    <tok fileIndex="0" linenr="13" column="12" str="0"/>
+    <tok fileIndex="0" linenr="13" column="13" str=";"/>
+    <tok fileIndex="0" linenr="14" column="1" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <standards>
+    <c version="c11"/>
+    <cpp version="c++20"/>
+  </standards>
+  <directivelist>
+    <directive file="structoint.c" linenr="1" str="#include&lt;stdio.h&gt;"/>
+  </directivelist>
+  <tokenlist>
+    <token id="000001E9072252F0" file="structoint.c" linenr="2" column="1" str="struct" scope="000001E906F5EC60" type="name"/>
+    <token id="000001E907225650" file="structoint.c" linenr="2" column="8" str="A" scope="000001E906F5EC60" type="name" type-scope="000001E906F5ED90"/>
+    <token id="000001E907225170" file="structoint.c" linenr="3" column="1" str="{" scope="000001E906F5ED90" link="000001E907224CF0"/>
+    <token id="000001E907225050" file="structoint.c" linenr="4" column="14" str="int" scope="000001E906F5ED90" type="name" isUnsigned="true"/>
+    <token id="000001E907225710" file="structoint.c" linenr="4" column="18" str="n" scope="000001E906F5ED90" type="name" varId="1" variable="000001E90722B630" values="000001E906B8E490" valueType-type="int" valueType-sign="unsigned" valueType-reference="None"/>
+    <token id="000001E9072248D0" file="structoint.c" linenr="4" column="19" str=";" scope="000001E906F5ED90"/>
+    <token id="000001E907224E10" file="structoint.c" linenr="5" column="5" str="char" scope="000001E906F5ED90" type="name"/>
+    <token id="000001E907225FB0" file="structoint.c" linenr="5" column="10" str="junk" scope="000001E906F5ED90" type="name" varId="2" variable="000001E90722BB70" astParent="000001E907224C30" valueType-type="char" valueType-pointer="1" valueType-reference="None"/>
+    <token id="000001E907224C30" file="structoint.c" linenr="5" column="14" str="[" scope="000001E906F5ED90" link="000001E907225530" astOperand1="000001E907225FB0" astOperand2="000001E907224A50" valueType-type="char" valueType-pointer="1" valueType-reference="None"/>
+    <token id="000001E907224A50" file="structoint.c" linenr="5" column="15" str="5" scope="000001E906F5ED90" type="number" isInt="true" values="000001E906B8E7B0" astParent="000001E907224C30" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="000001E907225530" file="structoint.c" linenr="5" column="16" str="]" scope="000001E906F5ED90" link="000001E907224C30"/>
+    <token id="000001E907224B70" file="structoint.c" linenr="5" column="17" str=";" scope="000001E906F5ED90"/>
+    <token id="000001E907224CF0" file="structoint.c" linenr="6" column="1" str="}" scope="000001E906F5ED90" link="000001E907225170"/>
+    <token id="000001E907224C90" file="structoint.c" linenr="6" column="2" str=";" scope="000001E906F5EC60"/>
+    <token id="000001E907225B90" file="structoint.c" linenr="9" column="1" str="int" scope="000001E906F5EC60" type="name"/>
+    <token id="000001E907225290" file="structoint.c" linenr="9" column="5" str="main" scope="000001E906F5EC60" type="name" function="000001E906C9D850"/>
+    <token id="000001E9072253B0" file="structoint.c" linenr="9" column="9" str="(" scope="000001E906F5EC60" link="000001E907225C50" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="000001E907225C50" file="structoint.c" linenr="9" column="10" str=")" scope="000001E906F5EC60" link="000001E9072253B0"/>
+    <token id="000001E907225CB0" file="structoint.c" linenr="10" column="1" str="{" scope="000001E906B75490" link="000001E907224B10"/>
+    <token id="000001E907225830" file="structoint.c" linenr="11" column="5" str="struct" scope="000001E906B75490" type="name"/>
+    <token id="000001E907224ED0" file="structoint.c" linenr="11" column="12" str="A" scope="000001E906B75490" type="name" type-scope="000001E906F5ED90"/>
+    <token id="000001E9072255F0" file="structoint.c" linenr="11" column="14" str="a" scope="000001E906B75490" type="name" varId="3" variable="000001E90722B2B0" valueType-type="record" valueType-reference="None" valueType-typeScope="000001E906F5ED90"/>
+    <token id="000001E9072256B0" file="structoint.c" linenr="11" column="15" str=";" scope="000001E906B75490"/>
+    <token id="000001E907226010" file="structoint.c" linenr="12" column="10" str="int" scope="000001E906B75490" type="name" isUnsigned="true" astParent="000001E907225470"/>
+    <token id="000001E907225470" file="structoint.c" linenr="12" column="14" str="*" scope="000001E906B75490" type="op" isArithmeticalOp="true" astOperand1="000001E907226010" astOperand2="000001E907224990"/>
+    <token id="000001E907224990" file="structoint.c" linenr="12" column="15" str="p" scope="000001E906B75490" type="name" varId="4" variable="000001E90722AD70" astParent="000001E907225470" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1" valueType-reference="None"/>
+    <token id="000001E9072258F0" file="structoint.c" linenr="12" column="17" str=";" scope="000001E906B75490" isSplittedVarDeclEq="true"/>
+    <token id="000001E907225AD0" file="structoint.c" linenr="12" column="15" str="p" scope="000001E906B75490" type="name" varId="4" variable="000001E90722AD70" astParent="000001E907225EF0" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1" valueType-reference="None"/>
+    <token id="000001E907225EF0" file="structoint.c" linenr="12" column="17" str="=" scope="000001E906B75490" type="op" isAssignmentOp="true" astOperand1="000001E907225AD0" astOperand2="000001E9072249F0" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1" valueType-reference="None"/>
+    <token id="000001E9072249F0" file="structoint.c" linenr="12" column="19" str="(" scope="000001E906B75490" link="000001E9072257D0" values="000001E906B8E8F0" astParent="000001E907225EF0" astOperand1="000001E907225950" valueType-type="int" valueType-sign="unsigned" valueType-pointer="1" valueType-reference="None"/>
+    <token id="000001E907225110" file="structoint.c" linenr="12" column="29" str="int" scope="000001E906B75490" type="name" isUnsigned="true"/>
+    <token id="000001E907225890" file="structoint.c" linenr="12" column="33" str="*" scope="000001E906B75490" type="op" isArithmeticalOp="true"/>
+    <token id="000001E9072257D0" file="structoint.c" linenr="12" column="34" str=")" scope="000001E906B75490" link="000001E9072249F0"/>
+    <token id="000001E907225950" file="structoint.c" linenr="12" column="35" str="&amp;" scope="000001E906B75490" type="op" values="000001E906B8E410" astParent="000001E9072249F0" astOperand1="000001E907225DD0" valueType-type="record" valueType-pointer="1" valueType-reference="None" valueType-typeScope="000001E906F5ED90"/>
+    <token id="000001E907225DD0" file="structoint.c" linenr="12" column="36" str="a" scope="000001E906B75490" type="name" varId="3" variable="000001E90722B2B0" values="000001E906B8E730" astParent="000001E907225950" valueType-type="record" valueType-reference="None" valueType-typeScope="000001E906F5ED90"/>
+    <token id="000001E907225A10" file="structoint.c" linenr="12" column="37" str=";" scope="000001E906B75490"/>
+    <token id="000001E9072259B0" file="structoint.c" linenr="13" column="5" str="return" scope="000001E906B75490" type="name" astOperand1="000001E907225A70" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="000001E907225A70" file="structoint.c" linenr="13" column="12" str="0" scope="000001E906B75490" type="number" isInt="true" values="000001E906B8E3F0" astParent="000001E9072259B0" valueType-type="int" valueType-sign="signed" valueType-reference="None"/>
+    <token id="000001E907226070" file="structoint.c" linenr="13" column="13" str=";" scope="000001E906B75490"/>
+    <token id="000001E907224B10" file="structoint.c" linenr="14" column="1" str="}" scope="000001E906B75490" link="000001E907225CB0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="000001E906F5EC60" type="Global">
+      <functionList>
+        <function id="000001E906C9D850" token="000001E907225290" tokenDef="000001E907225290" name="main" type="Function"/>
+      </functionList>
+    </scope>
+    <scope id="000001E906F5ED90" type="Struct" className="A" bodyStart="000001E907225170" bodyEnd="000001E907224CF0" nestedIn="000001E906F5EC60">
+      <varlist>
+        <var id="000001E90722B630"/>
+        <var id="000001E90722BB70"/>
+      </varlist>
+    </scope>
+    <scope id="000001E906B75490" type="Function" className="main" bodyStart="000001E907225CB0" bodyEnd="000001E907224B10" nestedIn="000001E906F5EC60" function="000001E906C9D850">
+      <varlist>
+        <var id="000001E90722B2B0"/>
+        <var id="000001E90722AD70"/>
+      </varlist>
+    </scope>
+  </scopes>
+  <variables>
+    <var id="000001E90722AD70" nameToken="000001E907224990" typeStartToken="000001E907226010" typeEndToken="000001E907225470" access="Local" scope="000001E906B75490" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="true" isPointer="true" isReference="false" isStatic="false"/>
+    <var id="000001E90722B2B0" nameToken="000001E9072255F0" typeStartToken="000001E907224ED0" typeEndToken="000001E907224ED0" access="Local" scope="000001E906B75490" constness="0" isArgument="false" isArray="false" isClass="true" isConst="false" isExtern="false" isLocal="true" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001E90722B630" nameToken="000001E907225710" typeStartToken="000001E907225050" typeEndToken="000001E907225050" access="Public" scope="000001E906F5ED90" constness="0" isArgument="false" isArray="false" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+    <var id="000001E90722BB70" nameToken="000001E907225FB0" typeStartToken="000001E907224E10" typeEndToken="000001E907224E10" access="Public" scope="000001E906F5ED90" constness="0" isArgument="false" isArray="true" isClass="false" isConst="false" isExtern="false" isLocal="false" isPointer="false" isReference="false" isStatic="false"/>
+  </variables>
+  <valueflow>
+    <values id="000001E906B8E490">
+      <value intvalue="18446744073709551615" bound="Upper" impossible="true" path="0"/>
+    </values>
+    <values id="000001E906B8E7B0">
+      <value intvalue="5" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="000001E906B8E8F0">
+      <value lifetime="000001E907225DD0" lifetime-scope="Local" lifetime-kind="Address" bound="Point" possible="true" path="0"/>
+    </values>
+    <values id="000001E906B8E410">
+      <value lifetime="000001E907225DD0" lifetime-scope="Local" lifetime-kind="Address" bound="Point" possible="true" path="0"/>
+      <value uninit="1" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="000001E906B8E730">
+      <value uninit="1" bound="Point" known="true" path="0"/>
+    </values>
+    <values id="000001E906B8E3F0">
+      <value intvalue="0" bound="Point" known="true" path="0"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>

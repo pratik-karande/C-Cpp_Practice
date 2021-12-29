@@ -33,14 +33,7 @@ int evaluate(string tokens){
      
     for(i = 0; i < tokens.length(); i++){
          
-        // Current token is a whitespace,
-        // skip it.
-        
-         
-       
-         
-        // Current token is a number, push
-        // it to stack for numbers.
+ 
         if(isdigit(tokens[i])){
             int val = 0;
              
@@ -54,28 +47,14 @@ int evaluate(string tokens){
             }
              
             values.push(val);
-             
-            // right now the i points to
-            // the character next to the digit,
-            // since the for loop also increases
-            // the i, we would skip one
-            //  token position; we need to
-            // decrease the value of i by 1 to
-            // correct the offset.
+       
               i--;
         }
          
-        // Closing brace encountered, solve
-        // entire brace.
-        
-         
-        // Current token is an operator.
+
         else
         {
-            // While top of 'ops' has same or greater
-            // precedence to current token, which
-            // is an operator. Apply operator on top
-            // of 'ops' to top two elements in values stack.
+           
             while(!ops.empty() && precedence(ops.top())
                                 >= precedence(tokens[i])){
                 int val2 = values.top();

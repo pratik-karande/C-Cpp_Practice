@@ -26,7 +26,7 @@ int main(){
                  c= common_denominator/k;
                  d= common_denominator/m;
                     if(a+b+c+d==common_denominator && i<=j && j<=k && k<=m){
-                         printf("%d %d %d %d\n ",i,j,k,m);
+                         printf("(%d , %d , %d , %d)\n ",i,j,k,m);
                     }
                 //with division
                 // int jResult=(1/k)+(1/j)+(1/i);
