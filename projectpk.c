@@ -549,8 +549,7 @@ void updatefinalScore()
     char buffer[BUFFER_SIZE];
     char newline[BUFFER_SIZE];
     newline[0] = p.jScore + '0';
-    // printf("Hints int  %d\n", c2.jScore);
-    // printf("Hints %c\n", newline[0]);
+
     int count;
 
     /* Remove extra new line character from stdin */
@@ -560,14 +559,6 @@ void updatefinalScore()
 
     fTemp = fopen("replace.txt", "w");
     printf("file opened ");
-    /* fopen() return NULL if unable to open file in given mode. */
-    // if (fPtr == NULL || fTemp == NULL)
-    // {
-    //     /* Unable to open file hence exit */
-    //     printf("\nUnable to open file.\n");
-    //     printf("Please check whether file exists and you have read/write privilege.\n");
-    //     exit(EXIT_SUCCESS);
-    // }
 
     /*
      * Read line from source file and write to destination 
@@ -577,8 +568,7 @@ void updatefinalScore()
     while ((fgets(buffer, BUFFER_SIZE, fPtr)) != NULL)
     {
         count++;
-        //printf("%d Count %d\n", count, c1.j_line4);
-        /* If current line is line to replace */
+        
         if (count == c1.j_line4)
         {
             newline[1] = '\n';
@@ -722,58 +712,58 @@ void chooseCategoryLevel()
         }
     }
 }
-int main()
-{
-    instructions();
-    char s_str2[20];
-    scanf("%s", s_str2);
-    if (strcmp(s_str2, "back") == 0)
-    {
-        printf("Are you sure you want to go back?\n");
-        printf("To confirm enter Y To cancel enter N\n");
-        char s_YN[20];
-        scanf("%s", &s_YN);
-        if (strcmp(s_YN, "Y") == 0)
-        {
-            exit(0);
-        }
-        else
-        {
-            chooseCategoryLevel();
-        }
-    }
-    else if (strcmp(s_str2, "exit") == 0)
-    {
-        printf("Are you sure you want to exit?\n");
-        printf("To confirm enter Y To cancel enter N\n");
-        char s_Exit[10];
-        scanf("%s", &s_Exit);
-        if (strcmp(s_Exit, "Y") == 0)
-        {
-            exit(0);
-        }
-        else
-        {
-            chooseCategoryLevel();
-        }
-    }
-    else if (strcmp(s_str2, "SB") == 0)
-    {
-        char c;
-        FILE *ptr;
-        ptr = fopen("playerInfo.txt", "r");
-        c = fgetc(ptr);
-        while (c != EOF)
-        {
-            printf("%c", c);
-            c = fgetc(ptr);
-        }
-        fclose(ptr);
-    }
-    else if (strcmp(s_str2, "start") == 0)
-    {
-        chooseCategoryLevel();
-    }
+// int main()
+// {
+//     instructions();
+//     char s_str2[20];
+//     scanf("%s", s_str2);
+//     if (strcmp(s_str2, "back") == 0)
+//     {
+//         printf("Are you sure you want to go back?\n");
+//         printf("To confirm enter Y To cancel enter N\n");
+//         char s_YN[20];
+//         scanf("%s", &s_YN);
+//         if (strcmp(s_YN, "Y") == 0)
+//         {
+//             exit(0);
+//         }
+//         else
+//         {
+//             chooseCategoryLevel();
+//         }
+//     }
+//     else if (strcmp(s_str2, "exit") == 0)
+//     {
+//         printf("Are you sure you want to exit?\n");
+//         printf("To confirm enter Y To cancel enter N\n");
+//         char s_Exit[10];
+//         scanf("%s", &s_Exit);
+//         if (strcmp(s_Exit, "Y") == 0)
+//         {
+//             exit(0);
+//         }
+//         else
+//         {
+//             chooseCategoryLevel();
+//         }
+//     }
+//     else if (strcmp(s_str2, "SB") == 0)
+//     {
+//         char c;
+//         FILE *ptr;
+//         ptr = fopen("playerInfo.txt", "r");
+//         c = fgetc(ptr);
+//         while (c != EOF)
+//         {
+//             printf("%c", c);
+//             c = fgetc(ptr);
+//         }
+//         fclose(ptr);
+//     }
+//     else if (strcmp(s_str2, "start") == 0)
+//     {
+//         chooseCategoryLevel();
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
